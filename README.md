@@ -1,4 +1,4 @@
-# Seminar : More Form processing Practice
+# Seminar : More form processing practice
 
 1. Put the files on a server. Check you can view them.
 2. Make some changes to form.html so that when the user clicks the submit button process.php gets loaded. 
