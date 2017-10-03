@@ -1,3 +1,17 @@
+<?php
+$errors=false;
+$username;
+if(isset($_POST["submitBtn"])){
+	$username = $_POST["username"];
+}else{
+	$errors=true;
+}
+
+if(empty($username)){
+	$errors=true;
+}
+
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -6,7 +20,12 @@
 </head>
 <body>
 <?php
-echo "It's working";
+if(!$errors){
+	echo "Welcome ".$username;
+}else{
+	echo "There was a problem";
+}
+
 ?>
 </body>
 </html>
